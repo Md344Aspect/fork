@@ -19,6 +19,45 @@ local ThemeManager = {} do
 	['Cyberpunk'] = { 12, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0f1021","AccentColor":"ff2a6d","BackgroundColor":"080812","OutlineColor":"2d2f55"}') },
 	['Ice Blue'] = { 13, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1b2a33","AccentColor":"4fc3f7","BackgroundColor":"111c22","OutlineColor":"2e4a57"}') },
 	['Rose Dark'] = { 14, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"2b1d24","AccentColor":"ff5c8a","BackgroundColor":"1e1419","OutlineColor":"4a2b38"}') },
+	['Obsidian'] = {
+	15, httpService:JSONDecode('{"FontColor":"e6e6e6","MainColor":"0f0f12","AccentColor":"7a7cff","BackgroundColor":"0a0a0d","OutlineColor":"2a2a30"}')
+}
+    ['Crimson'] = {
+	16, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1f1416","AccentColor":"c1121f","BackgroundColor":"140c0e","OutlineColor":"3a2327"}')
+}
+
+    ['Slate'] = {
+	17, httpService:JSONDecode('{"FontColor":"e5e7eb","MainColor":"1f2933","AccentColor":"94a3b8","BackgroundColor":"111827","OutlineColor":"374151"}')
+}
+
+    ['Abyss'] = {
+	18, httpService:JSONDecode('{"FontColor":"d1d5db","MainColor":"0b1320","AccentColor":"38bdf8","BackgroundColor":"070b14","OutlineColor":"1f2937"}')
+}
+
+    ['Blood Moon'] = {
+	19, httpService:JSONDecode('{"FontColor":"fef2f2","MainColor":"2a0f14","AccentColor":"ef4444","BackgroundColor":"1a090c","OutlineColor":"4c1d24"}')
+}
+
+    ['Neon Void'] = {
+	20, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0b0b14","AccentColor":"00f5ff","BackgroundColor":"05050b","OutlineColor":"1b1b2a"}')
+}
+
+    ['Carbon'] = {
+	21, httpService:JSONDecode('{"FontColor":"e5e5e5","MainColor":"1a1a1a","AccentColor":"9ca3af","BackgroundColor":"101010","OutlineColor":"2f2f2f"}')
+}
+
+    ['Amber Night'] = {
+	22, httpService:JSONDecode('{"FontColor":"fff7ed","MainColor":"1f160a","AccentColor":"f59e0b","BackgroundColor":"140e06","OutlineColor":"3b2a12"}')
+}
+
+    ['Deep Forest'] = {
+	23, httpService:JSONDecode('{"FontColor":"ecfdf5","MainColor":"0f1f1a","AccentColor":"10b981","BackgroundColor":"081410","OutlineColor":"1f3a30"}')
+}
+
+    ['Ultraviolet'] = {
+	24, httpService:JSONDecode('{"FontColor":"faf5ff","MainColor":"1a1025","AccentColor":"a855f7","BackgroundColor":"100818","OutlineColor":"3a2452"}')
+}
+
   }
 
 
