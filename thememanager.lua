@@ -5,61 +5,15 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-	['Default'] = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
-	['Green'] = { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"141414","AccentColor":"00ff8b","BackgroundColor":"1c1c1c","OutlineColor":"3c3c3c"}') },
-	['Jester'] = { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"db4467","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
-	['Mint'] = { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
-	['Tokyo Night'] = { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
-	['Ubuntu'] = { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
-	['Dracula'] = { 7, httpService:JSONDecode('{"FontColor":"f8f8f2","MainColor":"282a36","AccentColor":"bd93f9","BackgroundColor":"1e1f29","OutlineColor":"44475a"}') },
-	['Nord'] = { 8, httpService:JSONDecode('{"FontColor":"eceff4","MainColor":"2e3440","AccentColor":"88c0d0","BackgroundColor":"242933","OutlineColor":"4c566a"}') },
-	['Solarized Dark'] = { 9, httpService:JSONDecode('{"FontColor":"fdf6e3","MainColor":"002b36","AccentColor":"b58900","BackgroundColor":"073642","OutlineColor":"586e75"}') },
-	['Gruvbox Dark'] = { 10, httpService:JSONDecode('{"FontColor":"ebdbb2","MainColor":"282828","AccentColor":"fabd2f","BackgroundColor":"1d2021","OutlineColor":"504945"}') },
-	['Monokai'] = { 11, httpService:JSONDecode('{"FontColor":"f8f8f2","MainColor":"272822","AccentColor":"a6e22e","BackgroundColor":"1e1f1c","OutlineColor":"3e3d32"}') },
-	['Cyberpunk'] = { 12, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0f1021","AccentColor":"ff2a6d","BackgroundColor":"080812","OutlineColor":"2d2f55"}') },
-	['Ice Blue'] = { 13, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1b2a33","AccentColor":"4fc3f7","BackgroundColor":"111c22","OutlineColor":"2e4a57"}') },
-	['Rose Dark'] = { 14, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"2b1d24","AccentColor":"ff5c8a","BackgroundColor":"1e1419","OutlineColor":"4a2b38"}') },
-	['Obsidian'] = {
-	15, httpService:JSONDecode('{"FontColor":"e6e6e6","MainColor":"0f0f12","AccentColor":"7a7cff","BackgroundColor":"0a0a0d","OutlineColor":"2a2a30"}')
-},
-    ['Crimson'] = {
-	16, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1f1416","AccentColor":"c1121f","BackgroundColor":"140c0e","OutlineColor":"3a2327"}')
-},
-
-    ['Slate'] = {
-	17, httpService:JSONDecode('{"FontColor":"e5e7eb","MainColor":"1f2933","AccentColor":"94a3b8","BackgroundColor":"111827","OutlineColor":"374151"}')
-},
-
-    ['Abyss'] = {
-	18, httpService:JSONDecode('{"FontColor":"d1d5db","MainColor":"0b1320","AccentColor":"38bdf8","BackgroundColor":"070b14","OutlineColor":"1f2937"}')
-},
-
-    ['Blood Moon'] = {
-	19, httpService:JSONDecode('{"FontColor":"fef2f2","MainColor":"2a0f14","AccentColor":"ef4444","BackgroundColor":"1a090c","OutlineColor":"4c1d24"}')
-},
-
-    ['Neon Void'] = {
-	20, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0b0b14","AccentColor":"00f5ff","BackgroundColor":"05050b","OutlineColor":"1b1b2a"}')
-},
-
-    ['Carbon'] = {
-	21, httpService:JSONDecode('{"FontColor":"e5e5e5","MainColor":"1a1a1a","AccentColor":"9ca3af","BackgroundColor":"101010","OutlineColor":"2f2f2f"}')
-},
-
-    ['Amber Night'] = {
-	22, httpService:JSONDecode('{"FontColor":"fff7ed","MainColor":"1f160a","AccentColor":"f59e0b","BackgroundColor":"140e06","OutlineColor":"3b2a12"}')
-},
-
-    ['Deep Forest'] = {
-	23, httpService:JSONDecode('{"FontColor":"ecfdf5","MainColor":"0f1f1a","AccentColor":"10b981","BackgroundColor":"081410","OutlineColor":"1f3a30"}')
-},
-
-    ['Ultraviolet'] = {
-	24, httpService:JSONDecode('{"FontColor":"faf5ff","MainColor":"1a1025","AccentColor":"a855f7","BackgroundColor":"100818","OutlineColor":"3a2452"}')
-},
-
-  }
-
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
+		['BBot'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1e1e","AccentColor":"7e48a3","BackgroundColor":"232323","OutlineColor":"141414"}') },
+		['Fatality']		= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
+		['Jester'] 			= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"db4467","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
+		['Mint'] 			= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
+		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
+		['Ubuntu'] 			= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
+		['Quartz'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
+	}
 
 	function ThemeManager:ApplyTheme(theme)
 		local customThemeData = self:GetCustomTheme(theme)
@@ -148,24 +102,21 @@ local ThemeManager = {} do
 		end)
 
 		groupbox:AddDivider()
-		groupbox:AddDropdown('ThemeManager_CustomThemeList', { Text = 'Custom themes', Values = self:ReloadCustomThemes(), AllowNull = true, Default = 1 })
 		groupbox:AddInput('ThemeManager_CustomThemeName', { Text = 'Custom theme name' })
+		groupbox:AddDropdown('ThemeManager_CustomThemeList', { Text = 'Custom themes', Values = self:ReloadCustomThemes(), AllowNull = true, Default = 1 })
+		groupbox:AddDivider()
+		
+		groupbox:AddButton('Save theme', function() 
+			self:SaveCustomTheme(Options.ThemeManager_CustomThemeName.Value)
 
-		groupbox:AddButton('Load custom theme', function() 
+			Options.ThemeManager_CustomThemeList:SetValues(self:ReloadCustomThemes())
+			Options.ThemeManager_CustomThemeList:SetValue(nil)
+		end):AddButton('Load theme', function() 
 			self:ApplyTheme(Options.ThemeManager_CustomThemeList.Value) 
 		end)
 
-		groupbox:AddButton('Save custom theme', function() 
-			self:SaveCustomTheme(Options.ThemeManager_CustomThemeName.Value)
-
-			Options.ThemeManager_CustomThemeList.Values = self:ReloadCustomThemes()
-			Options.ThemeManager_CustomThemeList:SetValues()
-			Options.ThemeManager_CustomThemeList:SetValue(nil)
-		end)
-
 		groupbox:AddButton('Refresh list', function()
-			Options.ThemeManager_CustomThemeList.Values = self:ReloadCustomThemes()
-			Options.ThemeManager_CustomThemeList:SetValues()
+			Options.ThemeManager_CustomThemeList:SetValues(self:ReloadCustomThemes())
 			Options.ThemeManager_CustomThemeList:SetValue(nil)
 		end)
 
@@ -295,4 +246,5 @@ local ThemeManager = {} do
 
 	ThemeManager:BuildFolderTree()
 end
+
 return ThemeManager
