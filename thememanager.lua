@@ -13,6 +13,9 @@ local ThemeManager = {} do
 		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 		['Ubuntu'] 			= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
 		['Quartz'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
+		['Neverlose'] = {9,httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0f1217","AccentColor":"0b68b6","BackgroundColor":"0c0f14","OutlineColor":"1b1f24"}')},
+        ['Osiris'] = {10,httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"202020","AccentColor":"ff5500","BackgroundColor":"141414","OutlineColor":"2e2e2e"}')},
+        ['Aimware'] = {11,httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191919","AccentColor":"3dbaff","BackgroundColor":"0f0f0f","OutlineColor":"232323"}')},
 	}
 
 	function ThemeManager:ApplyTheme(theme)
